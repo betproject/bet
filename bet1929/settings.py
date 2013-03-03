@@ -10,6 +10,11 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+LOCALE_PATHS = (os.path.join(PROJECT_ROOT, 'locale'),)
+
+
+ 
 
 ADMINS = (
     ('admin', 'abrunet@centrale-marseille.fr'),
@@ -42,6 +47,12 @@ TIME_ZONE = 'Europe/Paris'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'fr-FR'
+
+
+LANGUAGES = (
+    ('fr', u"francais"),
+    ('en', u"anglais"),
+)
 
 SITE_ID = 1
 
@@ -95,6 +106,10 @@ STATICFILES_FINDERS = (
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    [...]
+    "django.core.context_processors.i18n",
+)
 
 
 # List of callables that know how to import templates from various sources.
@@ -112,9 +127,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+	'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'bet1929.urls'
+
+APPEND_SLASH = True  # Add a slash at the end of the URL
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'bet1929.wsgi.application'
@@ -137,8 +155,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-	'django_coverage',
-	'upload',
+    'upload',
+    'polls',
+
 )
 
 # A sample logging configuration. The only tangible logging
