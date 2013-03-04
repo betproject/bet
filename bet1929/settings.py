@@ -11,7 +11,7 @@ TEMPLATE_DEBUG = DEBUG
 
 CURRENT_PATH = os.path.abspath(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-LOCALE_PATHS = (os.path.join(PROJECT_ROOT, 'locale'),)
+LOCALE_PATHS = (os.path.join(PROJECT_ROOT, '../locale'),)
 
 
  
@@ -48,11 +48,11 @@ TIME_ZONE = 'Europe/Paris'
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'fr-FR'
 
-
 LANGUAGES = (
-    ('fr', u"francais"),
-    ('en', u"anglais"),
+    ('fr', u"Francais"),
+    ('en', u"English"),
 )
+
 
 SITE_ID = 1
 
@@ -107,8 +107,8 @@ STATICFILES_FINDERS = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-    [...]
     "django.core.context_processors.i18n",
+    'django.contrib.auth.context_processors.auth',
 )
 
 
