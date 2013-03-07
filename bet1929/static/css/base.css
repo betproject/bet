@@ -1,22 +1,51 @@
 /*class .
 id #*/
 
+
 /* --- CSS basique --- */
-html{margin: 0 0 0 0; min-height: 100%; background-color: #000}
-body{margin: 0 0 0 0 ;min-height: 100%; background-color: #fff;}
-p{padding: 0 0 0 50;}
-a:hover{color:#e31c23;}
+html{margin: 0 0 0 0; min-height: 100%; background-color: #fff;width: 100%;}
+body{margin: 0 0 0 0 ;min-height: 100%; background-color: #fff; position: absolute; top:0px; width: 100%;}
+p{padding: 0 50 0 50;}
+html,body,td,p,a {
+	font-family: "league", "Trebuchet MS", sans-serif;
+}
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+	color: #e31c23;
+}
+a:active {
+	text-decoration: none;
+	color: #000;
+}
+
 #clear { clear: both;}
 
 /* --- CSS de la bannière en haut --- */
-.bandeau{width: 400px; height: 111px; border-top: 0px; background-color: #fff; height: auto; width: auto;vertical-align: center;text-align: center}
+.bandeau{width: 400px; height: 111px; border-top: 0px; background-color: #fff; height: auto; width: auto;text-align: center}
 #logo { text-align: center; padding: 5 0 0 5; }
-#form_language {text-align:right; padding:2 10 0 0; position:relative; float:right;}
-
+#form_language {text-align:right; padding:2 10 0 0; position:relative; float:left;}
+#language { border: 0px; background-color: #fff; }
+#logout{float:right;}
 /* CSS du contenu */
-.pageContainer{ margin:auto; background-color: #fff;}
+.pageContainer{ margin:auto; background-color: #fff;min-height: 70%; padding-bottom: 30px; position: relative;}
+.pageContainer p { padding: 0 280 30 50; }
 
 /* --- CSS du menu --- */
-.menu{ list-style: none; list-style-type: none; float:right; padding: 20 20 20 20; }
+.menu{ list-style: none; list-style-type: none; float:right; padding: 0 20 20 20; }
 
-footer{background-color: #000; text-align: center; color:white; max-height: 25%;clear:both;}
+#spacer{height: 150px;}
+
+footer{position:absolute; bottom:0; background-color: #000;
+		background-image: url(../img/footer.png); background-repeat: repeat-x;
+		text-align: center; color:white; clear:both; width: 100% }
+
+#conditions{color:white;}
+#conditions:hover{color: #e31c23;}

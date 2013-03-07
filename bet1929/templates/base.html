@@ -2,6 +2,8 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/css/base.css" />
 	<title> Bet1929 </title>
+	<meta name="description" content="Bet1929 est le site référent de paris boursiers , basé sur les indices de clôture des bourses mondiales. ">
+    <meta name="Keywords" content="paris, pari, boursier, argent, bourse, cac40, bet, 1929, bet1929 ">
 	{% block extrahead %} {% endblock %}
 
 </head>
@@ -11,7 +13,7 @@
 	{% load static %}
 
 	<nav class="bandeau">
-		<a><img id="logo" src="{% static 'img/logo_bet1929.jpg' %}" alt="Logo" />
+		<a><img id="logo" src="{% static 'img/logo_bet1929.jpg' %}" alt="Logo" /></a>
 
 
 	
@@ -19,7 +21,7 @@
         <form action="/i18n/setlang/" method="post" id="form_language">
             {% csrf_token %}
             <input name="next" type="hidden" value="/" />
-            <select name="language" onchange="document.forms['form_language'].submit();">
+            <select name="language" onchange="document.forms['form_language'].submit();" id="language">
             {% get_language_info_list for LANGUAGES as languages %}
             {% for language in languages %}
             <option value="{{ language.code }}" {% ifequal language.code LANGUAGE_CODE %}selected="selected"{% endifequal %}>{{ language.name_local|capfirst }}</option>
@@ -27,18 +29,20 @@
             </select>
         </form>
 
-
+    	<div id="logout">
+                {% if user.is_authenticated %}<p><a href="/logout/">Logout</a></p>{% else %}<p><a href="/login/">Login</a></p>{% endif %}
+    	</div>
         <div id="clear"><div>
     </nav>
 <br/>
-      <p>  {% trans "Bienvenue" %} </p>
+     
        
-<div id="pageContainer">
-
+<div class="pageContainer">
+	 <p>  {% trans "Bienvenue" %} </p>
 	    <div class="menu">
-			<li><a><h2>{% trans "Premier item" %}</h2></a></li>
-			<li><a><h2>{% trans "Deuxieme" %}</h2></a></li>
-			<li><a><h2>{% trans "Troisieme" %}</h2></a></li>
+			<li><a href="#"><h2>{% trans "Accueil" %}</h2></a></li>
+			<li><a href="/users/"><h2>{% trans "Profil" %}</h2></a></li>
+			<li><a href="/games/"><h2>{% trans "Paris" %}</h2></a></li>
 		</div>
         
 	{% block content %}
@@ -46,6 +50,22 @@
 	{% endblock %}
 	
 </div>
+
+<div id="spacer">&nbsp;</div>
+<footer><br><br><br><br>Bet1929 | <a  id="conditions" href="/about/">{% trans "Mentions légales" %}</a><br>&nbsp;
+
+<center>
+<table width="100" border="0" cellpadding="000">
+  <tr>
+    <td align="center"><a href="https://www.facebook.com/Bet1929" target="_blank" ><img src="{% static 'img/facebook.jpg' %}" border="0" alt="facebook"/></a></td>
+    <td align="center"><a href="https://twitter.com/Bet1929" target="_blank"><img src="{% static 'img/twitter.jpg' %}" border="0" alt="twitter"/></a></td>
+  </tr>
+  <tr>
+    <td align="center">&nbsp;</td>
+    <td align="center">&nbsp;</td>
+  </tr>
+</table>
+</center>
+</footer>
 </body>
-<footer> <br/><br/>Bet1929 | <a>{% trans "Mentions légales" %}</a></footer>
 </html>
