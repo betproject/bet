@@ -50,7 +50,7 @@ def LoginRequest(request):
 
 def LogoutRequest(request):
         logout(request)
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('http://127.0.0.1:8000')
 		
 @login_required
 def user(request):

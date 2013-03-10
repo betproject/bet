@@ -4,7 +4,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js" type="text/javascript"></script>
         <script>
         $(function() {
-                $( "#id_birthday" ).datepicker();
+                $( "#id_birthday" ).datepicker({dateFormat: 'dd/mm/yy',
+                changeYear: true,  yearRange: '1930:2013', });
         });
         </script>
 {% endblock %}
@@ -36,6 +37,11 @@
         {% if form.birthday.errors %}<p class="error">{{ form.birthday.errors }}</p>{% endif %}
         <p><label for="birthday"{% if form.birthday.errors %} class="error"{% endif %}>Birthday:</label></p>
         <p>{{ form.birthday }}</p>
+</div>
+<div class="register_div">
+        {% if form.first_name.errors %}<p class="error">{{ form.first_name.errors }}</p>{% endif %}
+        <p><label for="first_name"{% if form.first_name.errors %} class="error"{% endif %}>First Name:</label></p>
+        <p>{{ form.first_name }}</p>
 </div>
 <div class="register_div">
         {% if form.name.errors %}<p class="error">{{ form.name.errors }}</p>{% endif %}

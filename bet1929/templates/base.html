@@ -30,7 +30,7 @@
         </form>
 
     	<div id="logout">
-                {% if user.is_authenticated %}<p><a href="/logout/">Logout</a></p>{% else %}<p><a href="/login/">Login</a></p>{% endif %}
+                {% if user.is_authenticated %}<p><a href="/logout/">Logout</a></p>{% else %}<p><a href="/login/">Login</a><a href="/register"> {% trans "Créer un compte" %}</a></p>{% endif %}
     	</div>
         <div id="clear"><div>
     </nav>

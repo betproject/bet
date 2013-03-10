@@ -8,6 +8,13 @@ class RegistrationForm(ModelForm):
         email           = forms.EmailField(label=(u'Email Address'))
         password        = forms.CharField(label=(u'Password'), widget=forms.PasswordInput(render_value=False))
         password1       = forms.CharField(label=(u'Verify Password'), widget=forms.PasswordInput(render_value=False))
+        birthday        = forms.DateField(label=(u'Date of Birth'), input_formats=['%d/%m/%Y'], required=True, widget = forms.DateInput(format = '%d/%m/%Y'))
+        first_name      = forms.CharField(label=(u'First Name'))
+
+        def __init__(self, *args, **kwargs):
+                super(RegistrationForm, self).__init__(*args, **kwargs)
+                self.fields['birthday'].localize = False
+                self.fields['birthday'].widget.is_localized = False
 
         class Meta:
                 model = Userbet
