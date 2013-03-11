@@ -48,6 +48,11 @@
         <p><label for="name"{% if form.name.errors %} class="error"{% endif %}>Name:</label></p>
         <p>{{ form.name }}</p>
 </div>
+<div class="register_div">
+        {% if form.country.errors %}<p class="error">{{ form.country.errors }}</p>{% endif %}
+        <p><label for="country"{% if form.country.errors %} class="error"{% endif %}>Country :</label></p>
+        <p>{{ form.country }}</p>
+</div>
 <p><input type="submit" alt="register" /></p>
 </form>
 {% endblock %}

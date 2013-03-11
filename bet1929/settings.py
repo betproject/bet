@@ -164,7 +164,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'upload',
     'users',
-    'countries',
+    'django_countries',
 
 )
 

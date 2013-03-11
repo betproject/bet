@@ -9,11 +9,11 @@ class Userbet(models.Model):
         name            = models.CharField(max_length=100)
         birthday        = models.DateField()
         address			= models.CharField(max_length=200)
-        PostCode		= models.CharField(max_length=20)
+        postCode		= models.CharField(max_length=20)
         City			= models.CharField(max_length=50)
-        Country			= models.CountryField()
+        country			= CountryField()
         status			= models.IntegerField(null=True)
-        IDCard			= models.IntegerField(null=True)
+        idcard			= models.IntegerField(null=True)
         
 
 
