@@ -21,6 +21,6 @@ msgstr ""
 msgid "Bienvenue"
 msgstr "Welcome"
 
-#: bet1929/templates/upload/home.html:8
+#: bet1929/templates/basic/home.html:8
 msgid "titre"
 msgstr "Title"

@@ -1,4 +1,4 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
@@ -6,6 +6,7 @@ from django.template import RequestContext
 from users.forms import RegistrationForm, LoginForm
 from users.models import Userbet
 from django.contrib.auth import authenticate, login, logout
+
 
 def UserbetRegistration(request):
         if request.user.is_authenticated():
@@ -15,9 +16,10 @@ def UserbetRegistration(request):
                 if form.is_valid():
                         user = User.objects.create_user(username=form.cleaned_data['username'], email = form.cleaned_data['email'], password = form.cleaned_data['password'])
                         user.save()
-                        userbet = Userbet(user=user, name=form.cleaned_data['name'], birthday=form.cleaned_data['birthday'])
+                        userbet = Userbet(user=user, name=form.cleaned_data['name'], birthday=form.cleaned_data['birthday'],firstname=form.cleaned_data['firstname'], address=form.cleaned_data['address'],postcode=form.cleaned_data['postcode'], city=form.cleaned_data['city'],country=form.cleaned_data['country'])
                         userbet.save()
-                        return HttpResponseRedirect('/user/')
+                        return HttpResponseRedirect('/user/')  
+
                 else:
                         return render_to_response('users/register.html', {'form': form}, context_instance=RequestContext(request))
         else:

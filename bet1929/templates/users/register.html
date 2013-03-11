@@ -12,11 +12,21 @@
 {% block content %}
 <form action="" method="post">
 {% csrf_token %}
-{% if form.errors %}<p>Please correct the following fields:</p>{% endif %}
+{% if form.errors %}<p>_{"Veuillez corriger svp les erreurs suivantes :"} {{ form.errors }}</p>{% endif %}
 <div class="register_div">
         {% if form.username.errors %}<p class="error">{{ form.username.errors }}</p>{% endif %}
         <p><label for="username"{% if form.username.errors %} class="error"{% endif %}>Username:</label></p>
         <p>{{ form.username }}</p>
+</div>
+<div class="register_div">
+        {% if form.firstname.errors %}<p class="error">{{ form.firstname.errors }}</p>{% endif %}
+        <p><label for="firstname"{% if form.firstname.errors %} class="error"{% endif %}>First Name:</label></p>
+        <p>{{ form.firstname }}</p>
+</div>
+<div class="register_div">
+        {% if form.name.errors %}<p class="error">{{ form.name.errors }}</p>{% endif %}
+        <p><label for="name"{% if form.name.errors %} class="error"{% endif %}>Name:</label></p>
+        <p>{{ form.name }}</p>
 </div>
 <div class="register_div">
         {% if form.email.errors %}<p class="error">{{ form.email.errors }}</p>{% endif %}
@@ -24,12 +34,19 @@
         <p>{{ form.email }}</p>
 </div>
 <div class="register_div">
-        {% if form.password.errors %}<p class="error">{{ form.password.errors }}</p>{% endif %}
+        {% if form.email1.errors %}<p class="error">{{ form.email1.errors }}</p>{% endif %}
+        <p><label for="email1"{% if form.email1.errors %} class="error"{% endif %}>Verify Email:</label></p>
+        <p>{{ form.email1 }}</p>
+</div>
+<div class="register_div">
+        {% if form.password.errors %}<p class="error">{{ form.password.errors }}
+</p>{% endif %}
         <p><label for="password"{% if form.password.errors %} class="error"{% endif %}>Password:</label></p>
         <p>{{ form.password }}</p>
 </div>
 <div class="register_div">
-        {% if form.password1.errors %}<p class="error">{{ form.password1.errors }}</p>{% endif %}
+        {% if form.password1.errors %}<p class="error">{{ form.password1.errors }}
+         </p>{% endif %}
         <p><label for="password1"{% if form.password1.errors %} class="error"{% endif %}>Verify Password:</label></p>
         <p>{{ form.password1 }}</p>
 </div>
@@ -39,20 +56,27 @@
         <p>{{ form.birthday }}</p>
 </div>
 <div class="register_div">
-        {% if form.first_name.errors %}<p class="error">{{ form.first_name.errors }}</p>{% endif %}
-        <p><label for="first_name"{% if form.first_name.errors %} class="error"{% endif %}>First Name:</label></p>
-        <p>{{ form.first_name }}</p>
+        {% if form.address.errors %}<p class="error">{{ form.address.errors }}</p>{% endif %}
+        <p><label for="address"{% if form.address.errors %} class="error"{% endif %}>Address (N°, street) :</label></p>
+        <p>{{ form.address }}</p>
 </div>
 <div class="register_div">
-        {% if form.name.errors %}<p class="error">{{ form.name.errors }}</p>{% endif %}
-        <p><label for="name"{% if form.name.errors %} class="error"{% endif %}>Name:</label></p>
-        <p>{{ form.name }}</p>
+        {% if form.postcode.errors %}<p class="error">{{ form.postcode.errors }}</p>{% endif %}
+        <p><label for="postcode"{% if form.postcode.errors %} class="error"{% endif %}>Post Code :</label></p>
+        <p>{{ form.postcode }}</p>
+</div>
+<div class="register_div">
+        {% if form.city.errors %}<p class="error">{{ form.city.errors }}</p>{% endif %}
+        <p><label for="city"{% if form.city.errors %} class="error"{% endif %}>City :</label></p>
+        <p>{{ form.city }}</p>
 </div>
 <div class="register_div">
         {% if form.country.errors %}<p class="error">{{ form.country.errors }}</p>{% endif %}
         <p><label for="country"{% if form.country.errors %} class="error"{% endif %}>Country :</label></p>
         <p>{{ form.country }}</p>
 </div>
+
 <p><input type="submit" alt="register" /></p>
 </form>
 {% endblock %}
+

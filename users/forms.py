@@ -2,14 +2,26 @@ from django import forms
 from django.contrib.auth.models import User
 from django.forms import ModelForm
 from users.models import Userbet
+from django_countries import CountryField
 
 class RegistrationForm(ModelForm):
         username        = forms.CharField(label=(u'User Name'))
+        firstname       = forms.CharField(label=(u'First Name'))
+        name            = forms.CharField(label=(u'Name'))
         email           = forms.EmailField(label=(u'Email Address'))
+        email1          = forms.EmailField(label=(u'Verify Email Address'))
         password        = forms.CharField(label=(u'Password'), widget=forms.PasswordInput(render_value=False))
         password1       = forms.CharField(label=(u'Verify Password'), widget=forms.PasswordInput(render_value=False))
         birthday        = forms.DateField(label=(u'Date of Birth'), input_formats=['%d/%m/%Y'], required=True, widget = forms.DateInput(format = '%d/%m/%Y'))
-        first_name      = forms.CharField(label=(u'First Name'))
+        address         = forms.CharField(label=(u'Address'))
+        postcode        = forms.CharField(label=(u'Post Code'))
+        city            = forms.CharField(label=(u'City'))
+        country         = CountryField()
+        status          = forms.IntegerField(required=False)
+        idcard          = forms.IntegerField(required=False)
+
+               
+
 
         def __init__(self, *args, **kwargs):
                 super(RegistrationForm, self).__init__(*args, **kwargs)

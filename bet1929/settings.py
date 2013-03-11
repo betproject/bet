@@ -69,7 +69,7 @@ USE_L10N = False
 USE_TZ = True
 
 
-# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Absolute filesystem path to the directory that will hold user-basiced files.
 # Example: "/var/www/example.com/media/"
 MEDIA_ROOT = CURRENT_PATH + '/media/'
 
@@ -162,7 +162,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'upload',
+    'basic',
     'users',
     'django_countries',
 
