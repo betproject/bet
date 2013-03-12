@@ -1,0 +1,272 @@
+[
+{
+  "pk": 1, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "adrien", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": true, 
+    "is_staff": true, 
+    "last_login": "2013-03-12T20:51:36Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$AeWoikn7fArf$fUFu4hvFYTPFei+L1rScq0ALo0oOCSoAzKI9yWQP5qs=", 
+    "email": "abrunet@centrale-marseille.fr", 
+    "date_joined": "2013-03-01T15:19:22Z"
+  }
+},
+{
+  "pk": 2, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "kim", 
+    "first_name": "K", 
+    "last_name": "Anh", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-04T12:12:11Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$Q4lqUVoyv0T4$HyIcais5av9z6r//g9e+/HUXJi3WCu6anM8u3fZvb6s=", 
+    "email": "kan@truc.com", 
+    "date_joined": "2013-03-04T12:12:11Z"
+  }
+},
+{
+  "pk": 3, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "adrienbrunet", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-07T19:26:32Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$WK8ouzrKTUxs$LeOikQ090FshnEMmTf55zRXYHHQ7xG+H2DD8gEaBfow=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-07T19:26:32Z"
+  }
+},
+{
+  "pk": 4, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "adrienbrunet2", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-07T19:41:11Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$HIrHq996m71C$cUSrgzI1L6BrbqQdzjf4Ky5x06n456WDjC0ZACkFziU=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-07T19:27:17Z"
+  }
+},
+{
+  "pk": 5, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "test", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-07T21:49:11Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$mxYTRhSXaaUr$foA59xqeSAxBfeW9/9n2yvSQbMwxbi7Y1EgsDjrq8oU=", 
+    "email": "test@test.fr", 
+    "date_joined": "2013-03-07T21:49:11Z"
+  }
+},
+{
+  "pk": 6, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "e", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-08T12:45:32Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$9gdkMw4PkBl7$ptnionPY/EFEhCxTLrChKUxwC5SmBCM8SQQESfAIuqI=", 
+    "email": "e@e.fr", 
+    "date_joined": "2013-03-08T12:45:32Z"
+  }
+},
+{
+  "pk": 7, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "ge", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-08T12:46:08Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$50TNrzvgTase$6AfPfNCLdgMx7tcrWDnllzZ3QyRww13HWZWUMo5pigU=", 
+    "email": "fd@e.fr", 
+    "date_joined": "2013-03-08T12:46:08Z"
+  }
+},
+{
+  "pk": 8, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "Adrienjbsqdfkj", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-09T18:53:21Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$3SbyyRKiPWTm$lr9Q8hH2ZQTH3IqIkI2aLltUsPlzlER1U7x7JlxTz+I=", 
+    "email": "adrien@lol.fr", 
+    "date_joined": "2013-03-09T18:53:21Z"
+  }
+},
+{
+  "pk": 9, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "test2", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-09T18:57:15Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$JKwpH7CQnCua$qD2kD6xLpmgrJD5RXvc8lKmLLjv9pD4GRIvlpnlKOm4=", 
+    "email": "", 
+    "date_joined": "2013-03-09T18:57:15Z"
+  }
+},
+{
+  "pk": 10, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "ceci est un test", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-09T18:59:39Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$VgADSDA0ZAUs$ibF+06schAV/T/+H8QrNGnwquJ345sBsnmReErAkni8=", 
+    "email": "test@test.com", 
+    "date_joined": "2013-03-09T18:59:39Z"
+  }
+},
+{
+  "pk": 11, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "testtesttest", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-11T23:36:20Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$f5LL4UmNOvxE$ZBAppyXDPLEUawOrVxYhFKqc/wz4TuJMvZQCoFl8hT0=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-11T23:36:20Z"
+  }
+},
+{
+  "pk": 12, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "testtesttest2", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-11T23:38:27Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$z3MSzYCqARh0$7oZfe62TwdVfxokv++EOCTYCUlUikcc0jECXy9wWFhk=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-11T23:38:27Z"
+  }
+},
+{
+  "pk": 13, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "3", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-11T23:39:18Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$Gf5AS5s84mEu$giQvcA4WieDlSsAjZzhNq2zrZo8/egCSO/c0KeH+y8k=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-11T23:39:18Z"
+  }
+},
+{
+  "pk": 14, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "3321", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-11T23:41:41Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$NvyiVk7KBtZt$K6ltv7LSaLyBvaTevjSZHxakeS23OSIHr9HEtmHi0Eo=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-11T23:41:41Z"
+  }
+},
+{
+  "pk": 15, 
+  "model": "auth.user", 
+  "fields": {
+    "username": "332132", 
+    "first_name": "", 
+    "last_name": "", 
+    "is_active": true, 
+    "is_superuser": false, 
+    "is_staff": false, 
+    "last_login": "2013-03-11T23:42:23Z", 
+    "groups": [], 
+    "user_permissions": [], 
+    "password": "pbkdf2_sha256$10000$IXXdOPm6S45W$UIDFRURV3mXX+U2bVMFxdnXUD45iiP9AiUnf8g+EqXw=", 
+    "email": "abrunet@lol.fr", 
+    "date_joined": "2013-03-11T23:42:23Z"
+  }
+}
+]

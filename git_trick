@@ -1,0 +1,44 @@
+---Init config
+git config --global user.name "Adrien Brunet"
+git config --global user.email "abrunet@centrale-marseille.fr"
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=36000'
+
+
+---Init
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/adrienbrunet/bet.git
+git push -u origin master
+
+---WTF is happening
+git status
+git diff
+
+---Recuperer ses affaires
+git pull
+
+---ajouter des trucs
+1. git add nom_fichier
+2. git commit (-a) -m "message du commit"
+3. git push
+
+---historique
+git log -p
+
+---Corriger texte commit
+git --amend
+
+---Revenir sur un commit
+git checkout nom_fichier
+
+---Virer une branche
+git push origin :ma_branche_a_suppr
+
+---Supprimer pour de vrai les fichier sur le repo git apres les avoir degagé de son repertoire
+git rm $(git ls-files --deleted)  
+
+
+

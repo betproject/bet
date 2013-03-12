@@ -165,6 +165,7 @@ INSTALLED_APPS = (
     'basic',
     'users',
     'django_countries',
+    'fts',
 
 )
 
